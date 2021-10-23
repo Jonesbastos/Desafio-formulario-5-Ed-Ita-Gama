@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <!-- Título e foto da página (aparece na aba) -->
+    <link rel="shortcut icon" type="image/png" href="imagens/logotype.png" />
+    <title>cadastro</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <header>
+        <div class="logo">
+            <div class="container">
+                <h1>Abra sua conta</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Início do formulário -->
+    <div class="box">
+        <form action="envio.html" method="post" enctype="multipart/form-data" >
+            <fieldset>
+                <legend><b>Formulario de Cliente</b></legend>
+                <br>
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="laberInput">Nome Completo* </label>
+                </div>
+                <br><br>
+                <!-- Campo do RG com legenda "CPF" e css de classe "campo" -->
+                <div class="inputBox">
+                    <input type="RG" cpf="cpf" id="cpf" class="inputUser" required maxlength="11">
+                    <label for="cpf" class="laberInput">RG</label>
+                </div>
+               
+
+                <br><br>
+                <!-- Campo do CPF com legenda "CPF" e css de classe "campo" -->
+                <div class="inputBox">
+                    <input type="cpf" cpf="cpf" id="cpf" class="inputUser" required maxlength="11">
+                    <label for="cpf" class="laberInput">CPF*</label>
+                </div>
+                <br>
+                <!-- Campo encaminhar documento de identificação -->
+                <div>
+                    <label>Documento de identificação</label>
+                    <input  type="file" name="photo" accept="image/*" />
+                </div>
+                
+                <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+                <p>Sexo</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="maculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="outros" name="genero" value="outros" required>
+                <label for="outros">Outros</label>
+                  <!-- Campo da data de nacimento com legenda "data de nascimento" e css de classe "campo" -->
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nacimento" id="data_nascimento"  >                    
+
+                <br><br>
+                <!-- Campo cep validação javaScrip-->
+                <div class="inputBox">
+                    <input type="cep" name="cep" id="cep" class="inputUser" required maxlength="8">
+                    <label for="cep" class="laberInput">CEP*</label>
+                </div>
+                <br><br>
+                <!-- Campo cidade validação javaScrip-->
+                <div class="inputBox">
+                    <input type="text" name="rua" id="rua" class="inputUser" required>
+                    <label for="rua" class="laberInput">Rua*</label>
+                </div>
+                <br><br>
+                <!-- Campo cidade validação javaScrip-->
+                <div class="inputBox">
+                    <input type="numero" name="numero" id="numero" class="inputUser" required>
+                    <label for="numero" class="laberInput">Numero*</label>
+                </div>
+                <br><br>
+                <!-- Campo Bairro validação javaScrip-->
+                <div class="inputBox">
+                    <input type="bairro" name="bairro" id="bairro" class="inputUser" required>
+                    <label for="bairro" class="laberInput">Bairro*</label>
+                </div>
+                <br><br>
+                <!-- Campo cidade validação javaScrip-->
+                <div class="inputBox">
+                    <input type="cidade" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="laberInput">Cidade*</label>
+                </div>
+                <br><br>
+                <!-- Campo do estado validação javaScrip-->
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="laberInput">Estado*</label>
+                </div>
+                <br>
+                <!-- Campo encaminhar comprovante de recidencia -->
+                <div>
+                    <label>Comprovante de Residencia</label>
+                    <input  type="file" name="photo" accept="image/*" />
+                </div>
+                <br><br>
+                <!-- Campo do nome -->
+                <div class="inputBox">
+                    <input type="text" nome="nome" id="celular" class="inputUser" required maxlength="14">
+                    <label for="celular" class="laberInput">Celular*</label>
+                </div>
+                <br><br>
+                <!-- Campo do telefone -->
+                <div class="inputBox">
+                    <input type="text" name="telefone_fixo" id="telefone_fixo" class="inputUser" required maxlength="13">
+                    <label for="telefone_fixo" class="laberInput">Telefone Fixo*</label>
+                </div>
+                <br><br>
+
+                <!-- Campo de email -->
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="laberInput">Email*</label>
+                </div>
+                <br><br>
+
+                   <p>Campos Obrigatorios*</p>
+                <!-- Botão para enviar o formulário -->
+                <input type="submit" name="submit" id="submit">           
+            </fieldset>
+
+        </form>
+
+       
+
+    </div>
+    <br><br>
+
+    <!-- Campo do rodape -->
+    <footer>
+        <div class="rodape">
+            <p class="bran">@ 2021 Programa de formação Tech | Itaú // Edição Pcd</p>
+        </div>
+    </footer>
+
+    <!-- CSS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: 100%;
+}
+
+.logo{
+  background-color: var(--light-orange);
+  border-radius: 5px;
+  padding: 30px;
+  height: 10%;
+  width: 10%;
+}

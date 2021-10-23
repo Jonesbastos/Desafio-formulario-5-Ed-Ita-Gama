@@ -1,0 +1,119 @@
+/* Todos os elementos da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;;
+    padding: 10px;;
+    box-sizing: border-box;
+    background-image: url( ../Imagens/agencia\ nova.jpg.jpg);
+    background-size: cover;
+  
+
+
+}
+/* Todos os elementos do formulario. deixando o quadro fume cores das letras tamanhos */
+.box{
+    color: white;
+    margin-left: 35%;  
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Elementos de tag <fieldset> borada azul*/
+fieldset{
+    border: 3px solid dodgerblue;
+}
+
+/* Elementos de tag <legend> com centralização */
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: #140083;
+    border-radius: 5px;
+    color: #FFEF00;
+    
+}
+/* Elementos da class <inputBox> centralização do conteudo box*/
+.inputBox{
+    position: relative;
+}
+
+/* Elementos da class <inputUser> utilização de linhas do formulario ao inves de caixa*/
+.inputUser{
+    background: none;
+    border:none;
+    border-bottom: 1px solid white ;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* Elementos da class <labelInput> possisionamento das linhas formulario */
+.laberInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 5px;
+}
+/* Elementos da class <inputUser: focus - valid> elevação do nomes ao degitas nas linhas*/
+.inputUser:focus ~ .laberInput,
+.inputUser:valid ~ .laberInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+/* Elementos da class <data_Nascimento> toda estilização de cor e formato*/
+#data_nascimento{
+    border:none;
+    padding: 6px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+/* Elementos da class <logo> toda estilização de cor e formato*/
+.logo {
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #fc6a03;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+     
+/* Elementos da class submit <botão> toda estilização de cor e formato*/
+#submit{
+    background: dodgerblue;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: #FFEF00;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+/* Elementos de tag <botão> mudançã de cor ao passar o funcior por cima*/
+#submit:hover{
+    background: #140083;
+}
+
+/* Elementos de tag <rodape> toda estilização de cor e formato*/
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif, monospace;
+    background-color: #fc6a03;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    
+}
