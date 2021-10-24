@@ -1,5 +1,7 @@
-Formulario
-Descrição
+Formulario:
+
+Descrição:
+
 Construir um formulario contendo
 Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.
 
@@ -14,7 +16,7 @@ O campo Sexo pode ser do tipo select com com as opções M = Masculino, F = Femi
 Disponibilizar o link do github do projeto bem descrito quanto às funcionalidades, implementações relevantes e links de pesquisas ✅
 
 
-Ferramenta
+Ferramenta:
 Visual Studio Code
 Linguagens
 HTML
